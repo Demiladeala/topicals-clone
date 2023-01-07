@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-
-    
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {HiOutlineMenu} from 'react-icons/hi'
     
 const Navbar = () => {
 
@@ -12,7 +13,7 @@ const Navbar = () => {
             <div className=' z-100 w-full px-2 py-3 text-center text-sm bg-[#c4c3ff] font-sans'><p>Subscribe to save 10% on your next Topicals delivery<a className="text-sm ml-3 underline">Learn More</a></p></div>
             <div className="flex w-full h-16 justify-between items-center px-14 navbar bg-[#f6f6f6] sm:justify-between">
                 <div className="w-8 lg:hidden">
-                    <div className=" cursor-pointer relative right-5"></div>
+                    <div className=" cursor-pointer relative right-5"><HiOutlineMenu className="w-full text-6xl text-gray-700"/></div>
                 </div>
                 <div className="hidden lg:flex visible">
                     <li className=" text-sm ">Shop</li>

@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Link from 'next/link';
 import Card from '../components/Card';
 import Category from '../components/Category';
@@ -8,9 +10,7 @@ import landingimage from '../public/landingpage.webp'
 import fadedimg from '../public/fadedeyeimg.webp'
 import spottieHottieImg from '../public/spottie-image.webp'
 import favimg from '../public/favproductimg.webp'
-
-
-
+import {IoMenuOutline} from 'react-icons/io'
 
 export default function Home() {
   const cards = productsdata.map(item =>{
