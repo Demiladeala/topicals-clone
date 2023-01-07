@@ -8,9 +8,7 @@ import landingimage from '../public/landingpage.webp'
 import fadedimg from '../public/fadedeyeimg.webp'
 import spottieHottieImg from '../public/spottie-image.webp'
 import favimg from '../public/favproductimg.webp'
-import {AiFillDollarCircle} from 'react-icons/ai'
-import {CiDeliveryTruck} from 'react-icons/ci'
-import {MdOutlineCancel} from 'react-icons/md'
+
 
 
 
@@ -127,9 +125,9 @@ export default function Home() {
         <h2>Never run out of your favorite product</h2>
         <p>With your Topicals subscription, you'll automatically receive your favorite products, 
         delivered to your door at 10% off original prices.</p>
-        <p className='flex'><AiFillDollarCircle/>10% off each product</p>
-        <p className='flex'><CiDeliveryTruck/>Free shipping on subscription orders</p>
-        <p className='flex'><MdOutlineCancel/>Easy cancellations</p>
+        <p className='flex'>10% off each product</p>
+        <p className='flex'>Free shipping on subscription orders</p>
+        <p className='flex'>Easy cancellations</p>
         <Link className=' button bg-orange-500 text-center text-white block  mt-4 rounded md:w-28 p-1' href='/'>Shop Now</Link>
       </div>
     </section>

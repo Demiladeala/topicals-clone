@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {TbFlower} from 'react-icons/tb'
+
 
 const Footer = () => {
     const d = new Date();
@@ -35,7 +35,6 @@ const Footer = () => {
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
             <span className='pt-10 md:justify-start'>&copy;{year} Topicals. All Rights Reserved</span>
-              <TbFlower className='m-auto mt-8 ' size={40}/>
             </div>
           </footer>
         </>
