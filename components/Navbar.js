@@ -10,7 +10,7 @@ const Navbar = () => {
     return ( 
         <>
         <div className="sticky top-0 z-50 shadow-sm w-full">
-            <div className=' z-100 w-full px-2 py-3 text-center text-sm bg-[#c4c3ff] font-sans'><p>Subscribe to save 10% on your next Topicals delivery<a className="text-sm ml-3 underline">Learn More</a></p></div>
+            <div className=' z-100 w-full px-2 py-3 text-center text-sm bg-[#c4c3ff] font-sans'><p>Subscribe to save 10% on your next Mocha delivery<a className="text-sm ml-3 underline">Learn More</a></p></div>
             <div className="flex w-full h-16 justify-between items-center px-14 navbar bg-[#f6f6f6] sm:justify-between">
                 <div className="w-8 lg:hidden">
                     <div className=" cursor-pointer relative right-5"><HiOutlineMenu className="w-full text-6xl text-gray-700"/></div>
@@ -21,13 +21,13 @@ const Navbar = () => {
                     <li className=" ml-7 text-sm">Rewards</li>
                     <li className=" ml-7 text-sm">About</li>
                 </div>
-                <h1 className="font-bold text-3xl">TOPICALS</h1>
+                <h1 className="font-bold text-3xl">MOCHA STORE</h1>
 
                 <div className="flex">
                     <div className=" text-black ml-7 text-sm hidden md:flex visible"><li>Search</li></div>
                     <li className="ml-7 text-sm cursor-pointer">Help</li>
                     <li className="ml-7 text-sm hidden md:flex visible">Account</li>
-                    <li className="ml-7 text-sm hidden md:flex visible">Bag</li>
+                    <li className="ml-7 text-sm hidden md:flex visible">Cart</li>
                     <div className="border-solid border border-black
                     w-5 h-5 rounded-full text-center ml-1 cursor-pointer"><span className="relative bottom-1">0</span></div>
                     
