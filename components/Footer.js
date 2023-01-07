@@ -26,15 +26,15 @@ const Footer = () => {
               <h2 className='font-bold text-xl pt-3'>Legal</h2>
               <h2 className='font-bold text-xl pt-3'>Social</h2>
               <h2 className='font-bold text-xl pt-3'>Wanna chat?</h2>
-              <p className='pt-4'>Email: help@mytopicals.com</p>
-              <p className='pt-3'>Text: TOPICALS to +1(833) 908-0674</p>
+              <p className='pt-4'>Email: help@mocha-store.com</p>
+              <p className='pt-3'>Text: Mocha Store to +1(833) 908-0674</p>
               <p className='text-xs italic pt-3'>*I agree to receive recurring automated
                 marketing text messages (e.g. cart reminders)
                 at the phone number provided. Consent is not a 
                 condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our Terms of Service and Privacy Policy.</p>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
-            <span className='pt-10 md:justify-start'>&copy;{year} Topicals. All Rights Reserved</span>
+            <span className='pt-10 md:justify-start'>&copy;{year} Mocha Store. All Rights Reserved</span>
             </div>
           </footer>
         </>
