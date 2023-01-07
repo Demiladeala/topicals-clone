@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
     <header>
-      <title>Macho-store</title>
+      <title>Moocha store</title>
       <link rel='icon' href='favicon.ico'/>
     </header>  
 
@@ -123,7 +123,7 @@ export default function Home() {
       <div>
         <span>New</span>
         <h2>Never run out of your favorite product</h2>
-        <p>With your Topicals subscription, you'll automatically receive your favorite products, 
+        <p>With your Mocha subscription, you'll automatically receive your favorite products, 
         delivered to your door at 10% off original prices.</p>
         <p className='flex'>10% off each product</p>
         <p className='flex'>Free shipping on subscription orders</p>
