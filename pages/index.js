@@ -6,11 +6,11 @@ import Link from 'next/link';
 import Card from '../components/Card';
 import Category from '../components/Category';
 import productsdata from '../components/Productsdata'
-import landingimage from '../public/landingpage.webp'
 import fadedimg from '../public/fadedeyeimg.webp'
-import spottieHottieImg from '../public/spottie-image.webp'
 import favimg from '../public/favproductimg.webp'
-import {IoMenuOutline} from 'react-icons/io'
+
+
+
 
 export default function Home() {
   const cards = productsdata.map(item =>{
@@ -56,7 +56,7 @@ export default function Home() {
                         {/*product section*/}
     <section className='ml-3 '>
     <div className='px-4'>
-        <h1 className='text-2xl md:text-4xl  '><span className='italic '>Shop </span>Holiday Gifts</h1>
+        <h1 className='text-2xl mt-16 md:text-4xl'><span className='italic '>Shop </span>Holiday Gifts</h1>
         <h2 className=' text-sm pt-6 '>Make your skincare wishlist come true our with our exclusive holiday</h2>
         <h2 className='text-sm mb-6'>gifts, made for every skin type and shade.</h2>
     </div>
@@ -70,16 +70,16 @@ export default function Home() {
       <div className='w-16 float-right relative left-16 top-6 bg-black h-[1px]'></div>
     </div>
 
-    <section className='w-[77%] m-auto mt-10 rounded-lg flex flex-col md:flex-row-reverse gap-20 '>
+    <section className='w-[77%] m-auto mt-10 rounded-lg flex flex-col md:flex-row-reverse gap-20 lg:my-28 '>
       <div className='w-full'>
         <Image src={fadedimg} className='rounded-lg overflow-hidden w-full bg-cover object-cover' width={300} height={100}/>
       </div>
-      <div>
-        <span>New Arrival</span>
-        <h2>Say <span>hi</span> to Faded Eye</h2>
-        <p>We made our best-selling skin brightening formula into an 
+      <div className='lg:mt-12'>
+        <span className='bg-[#d8fdb0] text-[8px] p-1 rounded-lg'>New Arrival</span>
+        <h2 className='text-2xl py-4'>Say <span className='italic'>hi</span> to Faded Eye</h2>
+        <p className='text-sm'>We made our best-selling skin brightening formula into an 
         under eye mask with 15-minute results!</p>
-        <p>Brighten, depuff, and let dark circles fade away.</p>
+        <p className='text-sm py-4'>Brighten, depuff, and let dark circles fade away.</p>
         <Link className=' button bg-orange-500 text-center text-white block  mt-4 rounded md:w-28 p-1' href='/'>Shop Now</Link>
       </div>
     </section>
@@ -90,7 +90,7 @@ export default function Home() {
 
       <section>
         <div>
-        <h1 className='text-center mt-12'><span className='italic'>Shop by Category</span></h1>
+        <h1 className='text-center mt-12 pb-8'><span className='italic'>Shop by Category</span></h1>
         </div>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] m-auto'>
           {category}
@@ -99,10 +99,10 @@ export default function Home() {
 
       <section className='ml-3 mt-8'>
           <div className='px-4 '>
-              <h1 className='text-2xl md:text-4xl'><span className='italic '>Shop </span>Best Sellers</h1>
+              <h1 className='text-2xl mt-20 md:text-4xl'><span className='italic '>Shop </span>Best Sellers</h1>
               <h2 className=' text-sm pt-3 '>Meet our best selling skincare solutions, for funner flare-ups ahead.</h2>
           </div>
-          <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] m-auto'>
+          <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] m-auto mt-8'>
           {cards}
           </div>
     </section>
@@ -116,36 +116,57 @@ export default function Home() {
 
     </div>
      
-    <section className='w-[77%] m-auto mb-20 mt-10 rounded-lg flex flex-col md:flex-row-reverse gap-20 '>
+    <section className='w-[77%] m-auto mb-20 mt-10 rounded-lg flex flex-col md:flex-row gap-20 '>
       <div className='w-full'>
         <Image src={favimg} className='rounded-lg overflow-hidden w-full bg-cover object-cover' width={300} height={100}/>
       </div>
-      <div>
-        <span>New</span>
-        <h2>Never run out of your favorite product</h2>
-        <p>With your Mocha subscription, you'll automatically receive your favorite products, 
+      <div className='lg:mt-12'>
+        <span className='bg-[#ff5a61] text-white text-[8px] px-3 py-1 rounded-lg'>New</span>
+        <h2 className='text-2xl py-4'>Never run out of your <span className='italic'>favorite</span> product</h2>
+        <p className='text-sm py-3'>With your Mocha subscription, you'll automatically receive your favorite products, 
         delivered to your door at 10% off original prices.</p>
-        <p className='flex'>10% off each product</p>
-        <p className='flex'>Free shipping on subscription orders</p>
-        <p className='flex'>Easy cancellations</p>
+        <p className='flex text-sm py-1'>10% off each product</p>
+        <p className='flex text-sm py-1'>Free shipping on subscription orders</p>
+        <p className='flex text-sm py-1'>Easy cancellations</p>
         <Link className=' button bg-orange-500 text-center text-white block  mt-4 rounded md:w-28 p-1' href='/'>Shop Now</Link>
       </div>
     </section>
 
-    <section className='w-full h-[650px] spottie'>
-      
+    <section className=' w-full h-[650px] spottie bg-[url(../public/spottie-image.webp)] relative overflow-hidden bg-cover bg-no-repeat bg-center text-white'>
+      {/* */}
+      <div className='text-center mt-8'>
+        <h1 className='text-2xl font-semibold lg:text-3xl'><span className='italic font-light'>Join</span> the Spottie Hotties</h1>
+        <p className='text-xs mt-5 lg:text-sm'>Joining the spottie hotties rewards program is no risk, all reward.</p>
+      </div>
+      <div className='flex gap-8 flex-col lg:mt-44  md:flex-row mt-20'>
+          <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
+            <h2 className='font-bold text-xl'><span className='font-bold text-xl'>1</span> Sign up</h2>
+            <p className='text-xs'>Create an account and get 25 
+            points towards products.</p>
+          </div>
+          <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
+            <h2 className='font-bold text-xl'><span>2</span> Earn Points</h2>
+            <p className='text-xs'>Earn points every time 
+            you shop with us.</p>
+          </div>
+          <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto px-2 py-3'>
+            <h2 className='font-bold text-xl'><span>3</span> Redeem Points</h2>
+            <p className='text-xs'>Redeem points for exclusive discounts.</p>
+          </div>
+          <Link href='/products' className='button rounded-md shadow-lg text-center m-auto text-sm w-28 p-2 '>Sign up</Link>
+      </div>
     </section>
 
     <section className='text-center'>
-      <h1 className='italic'>Meet our</h1>
-      <h1 className='font-bold'>Community</h1>
-      <div>
-        <div>#mytopicals</div>
-        <div>#mytopicals</div>
-        <div>#faded</div>
-        <div>#highroller</div>
-        <div>#highroller</div>
+      <h1 className='italic mt-20 text-3xl'>Meet our</h1>
+      <h1 className='font-bold text-3xl'>Community</h1>
+      <div className='flex gap-3 w-[90%] m-auto justify-center mt-4'>
+        <div className='bg-[#c4c3ff] w-24 text-xs rounded-full py-1'>#mytopicals</div>
+        <div className='bg-[#c4c3ff] w-24 text-xs rounded-full py-1'>#mytopicals</div>
+        <div className='bg-[#c4c3ff] w-24 text-xs rounded-full py-1'>#faded</div>
+        <div className='bg-[#c4c3ff] w-24 text-xs rounded-full py-1'>#highroller</div>
       </div>
+      <div className='bg-[#c4c3ff] w-24 text-xs rounded-full py-1 mt-2 m-auto'>#highroller</div>
     </section>
 
     <section>

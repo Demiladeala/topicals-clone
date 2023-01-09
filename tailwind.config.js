@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'spottie': "url('../public/spottie-image.webp')",
+      },
       fontFamily:{
         body: "Poppins",
       },

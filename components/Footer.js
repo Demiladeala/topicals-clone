@@ -7,15 +7,15 @@ const Footer = () => {
     let year = d.getFullYear();
     return ( 
       <>
-       {/*<section className='mt-40 h-20 flex justify-start items-center overflow-hidden'>
-        <p class="marquee">
-          <span>This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text -&nbsp;</span>
+    <section className='mt-40 h-20 flex justify-start items-center overflow-hidden'>
+        <p className="marquee text-2xl">
+          <span>@follow us  @tropicals  @tropicals</span>
         </p>
-        <p class="marquee marquee2">
-          <span>This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text -&nbsp;</span>
+        <p className="marquee marquee2 text-2xl">
+        <span>@follow us  @tropicals  @tropicals</span>
         </p>
 
-        </section>*/}
+        </section>
 
 
 
@@ -33,8 +33,8 @@ const Footer = () => {
                 at the phone number provided. Consent is not a 
                 condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our Terms of Service and Privacy Policy.</p>
             </div>
-            <div className='flex flex-col-reverse md:flex-row'>
-            <span className='pt-10 md:justify-start'>&copy;{year} Mocha Store. All Rights Reserved</span>
+            <div className='flex flex-col-reverse'>
+            <span className='pt-10'>&copy;{year} Mocha Store. All Rights Reserved</span>
             </div>
           </footer>
         </>

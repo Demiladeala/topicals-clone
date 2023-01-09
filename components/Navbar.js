@@ -3,33 +3,55 @@ import Head from "next/head";
 import Image from "next/image";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HiOutlineMenu} from 'react-icons/hi'
+import { useState } from "react";
+
+
+function MobileNav({open,setOpen}){
+    return(
+        <div className={`absolute top-0 left-0 w-full transform ${open ? "-translate-y-0":"-translate-y-full"} transition-transform duration-300 ease-in-out filter lg:hidden`}>
+            <div className="flex flex-col justify-left bg-[#f6f6f6] items-left mt-[108px] h-screen">
+                <Link className="text-xl font-normal my-3 mt-6 mx-4" href='/'>Home</Link>
+                <Link className="text-xl font-normal my-3 mx-4" href='/products'>Products</Link>
+                <Link className="text-xl font-normal my-3 mx-4" href='/contact'>Contact</Link>
+                <Link className="text-sm font-normal my-3 mx-4" href='/'>Search</Link>
+                <Link className="text-sm font-normal my-3 mx-4" href='/'>Account</Link>
+                <Link className="text-sm font-normal my-3 mx-4" href='/'>Accessibility</Link>
+                <Link href='/products' className='bg-white rounded-full shadow-lg text-center font-bold text-sm w-[30%] p-2 mx-8 mt-6'>Shop Now</Link>
+            </div>
+        </div>
+    )
+}
     
 const Navbar = () => {
-
+    const [open , setOpen] = useState(false); //It's false because the btn is not open
     return ( 
         <>
         <div className="sticky top-0 z-50 shadow-sm w-full">
-            <div className=' z-100 w-full px-2 py-3 text-center text-sm bg-[#c4c3ff] font-sans'><p>Subscribe to save 10% on your next Mocha delivery<a className="text-sm ml-3 underline">Learn More</a></p></div>
-            <div className="flex w-full h-16 justify-between items-center px-14 navbar bg-[#f6f6f6] sm:justify-between">
-                <div className="w-8 lg:hidden">
-                    <div className=" cursor-pointer relative right-5"><HiOutlineMenu className="w-full text-6xl text-gray-700"/></div>
+            <div className=' z-100 w-full px-2 py-3 text-center text-sm bg-[#c4c3ff]'><p>Subscribe to save 10% on your next Mocha delivery<a className="text-sm ml-3 underline">Learn More</a></p></div>
+            <div className="flex w-full h-16 justify-between items-center px-14 navbar bg-[#f6f6f6] sm:justify-between px-1.5">
+                <MobileNav open={open} setOpen={setOpen}/> 
+                <div className="w-8 ml-3 lg:hidden">
+                    <div className="group z-50 relative w-8 h-6 cursor-pointer flex-col justify-between items-center flex" onClick={() => {setOpen(!open)}}>
+                        <span className={`h-1 w-full bg-black rounded-lg group-hover:text-red-500 cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-2.5": ""}`}/>
+                        <span className={`h-1 w-full bg-black rounded-lg group-hover:text-red-500 cursor-pointer transform transition duration-300 ease-in-out ${open ? "w-0": "w-full"}`}/>
+                        <span className={`h-1 w-full bg-black rounded-lg group-hover:text-red-500 cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-2.5": ""}`}/>
+                    </div>
                 </div>
                 <div className="hidden lg:flex visible">
-                    <li className=" text-sm ">Shop</li>
+                    <li className=" text-sm ml-4">Shop</li>
                     <li className="ml-7 text-sm">Holiday Gifts</li>
                     <li className=" ml-7 text-sm">Rewards</li>
                     <li className=" ml-7 text-sm">About</li>
                 </div>
-                <h1 className="font-bold text-3xl">MOCHA STORE</h1>
+                <h1 className="font-bold text-[15px] mx-5 flex sm:text-center mr-2 lg:text-[20px]">MOCHA STORE</h1>
 
                 <div className="flex">
                     <div className=" text-black ml-7 text-sm hidden md:flex visible"><li>Search</li></div>
-                    <li className="ml-7 text-sm cursor-pointer">Help</li>
+                    <li className="ml-0 text-sm cursor-pointer md:ml-7">Help</li>
                     <li className="ml-7 text-sm hidden md:flex visible">Account</li>
                     <li className="ml-7 text-sm hidden md:flex visible">Cart</li>
                     <div className="border-solid border border-black
-                    w-5 h-5 rounded-full text-center ml-1 cursor-pointer"><span className="relative bottom-1">0</span></div>
+                    w-5 h-5 rounded-full text-center ml-1 mr-2 cursor-pointer"><span className="relative bottom-[3px]">0</span></div>
                     
                 </div>
 
