@@ -13,7 +13,7 @@ const Navbar = () => {
     const [nav, setNav]  = useState(false)
 
     const handleNav = () => {
-        setNav(nav)
+        setNav(!nav)
     }
 
 
