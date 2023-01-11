@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
     <header>
-      <title>Moocha store</title>
+      <title>Mocha store</title>
       <link rel='icon' href='favicon.ico'/>
     </header>  
 
@@ -138,7 +138,7 @@ export default function Home() {
         <h1 className='text-2xl font-semibold lg:text-3xl'><span className='italic font-light'>Join</span> the Spottie Hotties</h1>
         <p className='text-xs mt-5 lg:text-sm'>Joining the spottie hotties rewards program is no risk, all reward.</p>
       </div>
-      <div className='flex gap-8 flex-col lg:mt-44  md:flex-row mt-20'>
+      <div className='flex gap-8 flex-col lg:mt-44 md:flex-row mt-20'>
           <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
             <h2 className='font-bold text-xl'><span className='font-bold text-xl'>1</span> Sign up</h2>
             <p className='text-xs'>Create an account and get 25 
@@ -153,8 +153,8 @@ export default function Home() {
             <h2 className='font-bold text-xl'><span>3</span> Redeem Points</h2>
             <p className='text-xs'>Redeem points for exclusive discounts.</p>
           </div>
-          <Link href='/products' className='button rounded-md shadow-lg text-center m-auto text-sm w-28 p-2 '>Sign up</Link>
       </div>
+      <Link href='/products' className='button rounded-md shadow-lg text-center m-auto text-sm w-28 p-2 block relative mt-12'>Sign up</Link>
     </section>
 
     <section className='text-center'>
@@ -169,24 +169,24 @@ export default function Home() {
       <div className='bg-[#c4c3ff] w-24 text-xs rounded-full py-1 mt-2 m-auto'>#highroller</div>
     </section>
 
-    <section>
-      <div className=''>
-        <div className=' cell-1'>
+    <section className='h-[650px] rounded-xl w-[90%] m-auto mt-12 grid grid-cols-2 md:grid-cols-3 gap-5 lg:w-[80%]'>
+     
+        <div className='bg-[url(../public/productimg6.webp)] bg-cover bg-center bg-black/10 w-full text-center text-5xl py-4 rounded-lg row-span-2'>
         </div>
-        <div className=' cell-2'>
+        <div className='bg-[url(../public/grid-img2.webp)] bg-cover bg-center bg-black/10 w-full text-center text-5xl py-4 rounded-lg'>
         </div>
-        <div className=' cell-3'>
-
+        <div className='bg-[url(../public/grid-img3.webp)] bg-cover bg-center bg-black/10 w-full text-center text-5xl py-4 rounded-lg'>
         </div>
-        <div className=' cell-4'>
-
+        <div className='bg-[url(../public/grid-img4.webp)] bg-cover bg-center bg-black/10 w-full text-center text-5xl py-4 rounded-lg'>
         </div>
-        <div className=' cell-5'>
-
+        <div className='bg-[url(../public/grid-img5.webp)] bg-cover bg-center bg-black/10 w-full text-center text-5xl py-4 rounded-lg'>
         </div>
-      </div>
     </section>
 
+    <div className='border-black w-[70%] ml-[25%] mt-10 flex gap-4 justify-end lg:w-[65%]'>
+    <Link href='/' className='border border-solid border-black text-xs rounded-md px-[1.5px] py-1 cursor-pointer  hover:bg-gray-700 hover:text-white'>Follow our Instagram</Link>
+      <Link href='/' className='border border-solid border-black text-xs rounded-md px-[1.5px] py-1 cursor-pointer hover:bg-gray-700 hover:text-white'>Follow our Tiktok</Link>
+    </div>
     </>
 
   )

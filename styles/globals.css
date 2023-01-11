@@ -4,7 +4,7 @@
 @tailwind utilities;
 @layer base{
   body{
-    @apply bg-[#f6f6f6] font-body
+    @apply bg-[#f6f6f6] font-body transition-all duration-500
   }
   a{
     @apply no-underline
