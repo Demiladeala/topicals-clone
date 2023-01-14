@@ -24,10 +24,8 @@ const Navbar = () => {
             <div className="flex w-full h-16 justify-between items-center px-14 navbar bg-[#f6f6f6] sm:justify-between px-1.5">
                
                 <div className="hidden lg:flex visible">
-                    <li className=" text-sm ml-4">Shop</li>
-                    <li className="ml-7 text-sm">Holiday Gifts</li>
-                    <li className=" ml-7 text-sm">Rewards</li>
-                    <li className=" ml-7 text-sm">About</li>
+                    <li className=" text-sm ml-4"><Link href='/'>Shop</Link></li>
+                    <li className=" ml-7 text-sm"><Link href='/'>About</Link></li>
                 </div>
 
                 <div className="w-8 ml-3 z-10 cursor-pointer lg:hidden">
@@ -53,9 +51,7 @@ const Navbar = () => {
                 <h1 className="font-bold text-[15px] mx-5 flex sm:text-center mr-2 lg:text-[20px]">MOCHA STORE</h1>
 
                 <div className="flex">
-                    <div className=" text-black ml-7 text-sm hidden md:flex visible"><li>Search</li></div>
                     <li className="ml-0 text-sm cursor-pointer md:ml-7">Help</li>
-                    <li className="ml-7 text-sm hidden md:flex visible">Account</li>
                     <li className="ml-7 text-sm hidden md:flex visible">Cart</li>
                     <div className="border-solid border border-black
                     w-5 h-5 rounded-full text-center ml-1 mr-2 cursor-pointer"><span className="relative bottom-[3px]">0</span></div>
