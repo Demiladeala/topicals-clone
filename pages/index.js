@@ -56,7 +56,7 @@ export default function Home() {
                         {/*product section*/}
     <section className='ml-3 '>
     <div className='px-4'>
-        <h1 className='text-2xl mt-16 md:text-4xl'><span className='italic '>Shop </span>Holiday Gifts</h1>
+        <h1 className='text-2xl mt-16 md:text-4xl' id='about'><span className='italic '>Shop </span>Holiday Gifts</h1>
         <h2 className=' text-sm pt-6 '>Make your skincare wishlist come true our with our exclusive holiday</h2>
         <h2 className='text-sm mb-6'>gifts, made for every skin type and shade.</h2>
     </div>
@@ -132,7 +132,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className=' w-full h-[650px] spottie bg-[url(../public/spottie-image.webp)] relative overflow-hidden bg-cover bg-no-repeat bg-center text-white'>
+    <section className=' w-full h-[650px] spottie bg-[url(../public/spottie-image.webp)] relative overflow-hidden bg-cover bg-no-repeat bg-center text-white' id='spottie'>
       {/* */}
       <div className='text-center mt-8'>
         <h1 className='text-2xl font-semibold lg:text-3xl'><span className='italic font-light'>Join</span> the Spottie Hotties</h1>
