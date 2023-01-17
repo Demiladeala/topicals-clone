@@ -48,7 +48,7 @@
     transform: translate(-100%, 0);
   }
 }
-.landing{
+/*.landing{
   background-image: url(../public/landingpage.webp);
   background-repeat: no-repeat;
   width: 100%;
@@ -57,7 +57,7 @@
   background-position:center;
   height: 650px;
   z-index: 0;
-}
+}*/
 .spottie{
   background: linear-gradient(#191a19a5,#2223239a),url(../public/spottie-image.webp);
   background-repeat: no-repeat;

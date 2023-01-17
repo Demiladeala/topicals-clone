@@ -8,7 +8,7 @@ import Category from '../components/Category';
 import productsdata from '../components/Productsdata'
 import fadedimg from '../public/fadedeyeimg.webp'
 import favimg from '../public/favproductimg.webp'
-
+import landingpage from '../public/landingpage.webp'
 
 
 
@@ -45,7 +45,7 @@ export default function Home() {
 
                         {/*image section*/}
     <section className="landing">
-    
+      <Image className=' overflow-hidden bg-no-repeat w-full bg-cover bg-center h-[400px] sm:h-[650px] z-0' src={landingpage}></Image>
     </section>
     <div className='px-4 pb-16 pt-24 ml-3 tagline md:mb-10'>
         <h1 className='text-2xl md:text-4xl'>Stock <span className='italic'>up</span> and save!</h1>
