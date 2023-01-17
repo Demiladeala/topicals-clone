@@ -9,6 +9,7 @@ import productsdata from '../components/Productsdata'
 import fadedimg from '../public/fadedeyeimg.webp'
 import favimg from '../public/favproductimg.webp'
 import landingpage from '../public/landingpage.webp'
+import spottieimg from '../public/spottie-image.webp'
 
 
 
@@ -47,7 +48,7 @@ export default function Home() {
     <section className="landing">
       <Image className=' overflow-hidden bg-no-repeat w-full bg-cover bg-center h-[400px] sm:h-[650px] z-0' src={landingpage}></Image>
     </section>
-    <div className='px-4 pb-16 pt-24 ml-3 tagline md:mb-10'>
+    <div className='pt-8 px-4 pb-20 md:pt-28 ml-3 tagline md:mb-10'>
         <h1 className='text-2xl md:text-4xl'>Stock <span className='italic'>up</span> and save!</h1>
         <h2 className=' text-lg pt-6 font-semibold'>Time to get your skincare shelf together.</h2>
         <h2 className='text-lg font-semibold mb-6'>Save 20% on bundles with code <span className='font-bold'>BOXME.</span></h2>
@@ -132,30 +133,29 @@ export default function Home() {
       </div>
     </section>
 
-    <section className=' w-full h-[650px] spottie bg-[url(../public/spottie-image.webp)] relative overflow-hidden bg-cover bg-no-repeat bg-center text-white' id='spottie'>
-      {/* */}
-      <div className='text-center mt-8'>
-        <h1 className='text-2xl font-semibold lg:text-3xl'><span className='italic font-light'>Join</span> the Spottie Hotties</h1>
-        <p className='text-xs mt-5 lg:text-sm'>Joining the spottie hotties rewards program is no risk, all reward.</p>
-      </div>
-      <div className='flex gap-8 flex-col lg:mt-44 md:flex-row mt-20'>
-          <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
-            <h2 className='font-bold text-xl'><span className='font-bold text-xl'>1</span> Sign up</h2>
-            <p className='text-xs'>Create an account and get 25 
-            points towards products.</p>
-          </div>
-          <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
-            <h2 className='font-bold text-xl'><span>2</span> Earn Points</h2>
-            <p className='text-xs'>Earn points every time 
-            you shop with us.</p>
-          </div>
-          <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto px-2 py-3'>
-            <h2 className='font-bold text-xl'><span>3</span> Redeem Points</h2>
-            <p className='text-xs'>Redeem points for exclusive discounts.</p>
-          </div>
-      </div>
-      <Link href='/products' className='button rounded-md shadow-lg text-center m-auto text-sm w-28 p-2 block relative mt-12'>Sign up</Link>
-    </section>
+    <section className='spottie w-full h-[650px] relative overflow-hidden bg-cover bg-no-repeat bg-center text-white from-[#191a19a5] to-[#2223239a]' id='spottie'>
+        <div className='text-center mt-8'>
+          <h1 className='text-2xl font-semibold lg:text-3xl'><span className='italic font-light'>Join</span> the Spottie Hotties</h1>
+          <p className='text-xs mt-5 lg:text-sm'>Joining the spottie hotties rewards program is no risk, all reward.</p>
+        </div>
+        <div className='flex gap-8 flex-col lg:mt-44 md:flex-row mt-20'>
+            <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
+              <h2 className='font-bold text-xl'><span className='font-bold text-xl'>1</span> Sign up</h2>
+              <p className='text-xs'>Create an account and get 25 
+              points towards products.</p>
+            </div>
+            <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto p-3'>
+              <h2 className='font-bold text-xl'><span>2</span> Earn Points</h2>
+              <p className='text-xs'>Earn points every time 
+              you shop with us.</p>
+            </div>
+            <div className='bg-white/10 shadow-md w-48 rounded-lg m-auto px-2 py-3'>
+              <h2 className='font-bold text-xl'><span>3</span> Redeem Points</h2>
+              <p className='text-xs'>Redeem points for exclusive discounts.</p>
+            </div>
+        </div>
+        <Link href='/products' className='button rounded-md shadow-lg text-center m-auto text-sm w-28 p-2 block relative mt-12'>Sign up</Link>
+      </section>
 
     <section className='text-center'>
       <h1 className='italic mt-20 text-3xl'>Meet our</h1>
